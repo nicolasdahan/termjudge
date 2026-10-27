@@ -1,0 +1,90 @@
+<examples>
+Illustrative of the decision types (they may be from a different domain than the item you decide). Each example shows the same fields as the item you will decide. Base each decision only on the fields shown.
+
+<example>
+Term and document:
+- English source term: seismic hazard
+- Glossary concept (English prefLabel): seismic hazard
+- Document: doc3
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+  - glossary: "aléa sismique"
+  - frequency: "risque sismique"
+  - first: "risque sismique"
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+  - "risque sismique" × 2
+  - "aléa sismique" × 1
+{{
+  "reference": "aléa sismique",
+  "justification": "Rule 1 prefers the glossary candidate 'aléa sismique', the domain-standard term, over the more frequent 'risque sismique'."
+}}
+</example>
+
+<example>
+Term and document:
+- English source term: stress
+- Glossary concept (English prefLabel): stress
+- Document: doc9
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+  - glossary: "stress"
+  - frequency: "contrainte"
+  - first: "contrainte"
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+  - "contrainte" × 4
+  - "stress" × 1
+{{
+  "reference": "contrainte",
+  "justification": "Rule 1 exception: the glossary form 'stress' fits the psychological sense, but this document uses the mechanical sense, whose established term is 'contrainte'."
+}}
+</example>
+
+<example>
+Term and document:
+- English source term: crust-mantle boundary
+- Glossary concept (English prefLabel): Moho
+- Document: doc5
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+  - frequency: "limite entre la croûte et le manteau"
+  - first: "limite entre la croûte et le manteau"
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+  - "limite entre la croûte et le manteau" × 3
+  - "limite croûte-manteau" × 2
+{{
+  "reference": "limite croûte-manteau",
+  "justification": "No glossary candidate; rule 2 prefers the concise compound term 'limite croûte-manteau' over the longer paraphrase, even though the paraphrase is more frequent."
+}}
+</example>
+
+<example>
+Term and document:
+- English source term: very-low-frequency earthquakes
+- Glossary concept (English prefLabel): (unknown)
+- Document: doc1
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+  - frequency: "séismes de très basse fréquence"
+  - first: "séismes de très basse fréquence"
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+  - "séismes de très basse fréquence" × 2
+  - "séismes à très basse fréquence" × 2
+{{
+  "reference": "séismes de très basse fréquence",
+  "justification": "'de' and 'à' are both attested and equally idiomatic here and the two forms tie on count, so rule 3 keeps the one appearing first."
+}}
+</example>
+
+<example>
+Term and document:
+- English source term: SEM
+- Glossary concept (English prefLabel): scanning electron microscope
+- Document: doc8
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+  - frequency: "microscopie électronique à balayage"
+  - first: "microscopie électronique à balayage"
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+  - "microscopie électronique à balayage" × 2
+  - "MEB" × 1
+{{
+  "reference": "MEB",
+  "justification": "No glossary candidate; rule 2 prefers the established concise acronym 'MEB' over its longer spelled-out form, even though the spelled-out form is more frequent."
+}}
+</example>
+</examples>

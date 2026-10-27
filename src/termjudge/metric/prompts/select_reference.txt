@@ -1,0 +1,25 @@
+You are given one English specialised source term in the {domain} domain and the French translations observed for it across several machine-translation systems in a single document. Pick the best reference translation: the single French form a professional translator of this domain would use consistently for this term in this document. It becomes the anchor against which every system's translation of this term is judged.
+
+Selection rules, in order:
+1. Prefer the glossary candidate (the line tagged "glossary:") when there is one, unless it clearly renders a different sense of the term than the sense used in this document. A glossary candidate is shown only for a head term; a variant source form has none.
+2. Otherwise prefer the most idiomatic, terminologically appropriate French form. An established concise term beats a longer explanatory paraphrase; never prefer a form merely because it is longer.
+3. Tie-break: higher observed count; if still tied, the one appearing first (candidate list first, then observed translations top to bottom).
+
+The chosen reference MUST be one of the French forms displayed below. Never invent, correct, translate back, or rephrase a form. Copy it exactly, WITHOUT the surrounding quotes and WITHOUT the strategy tag.
+
+In the two lists below, each form is wrapped in quotes; a candidate line is additionally prefixed by a strategy tag ("glossary", "frequency" or "first"). The quotes and the tag are display formatting and must not be copied into your answer; the tag only tells you where a candidate came from (Rule 1 uses it to spot the glossary candidate). A prefLabel shown as "(unknown)", or a list shown as "(none)", is unavailable.
+
+{examples_block}Term and document:
+- English source term: {src_form}
+- Glossary concept (English prefLabel): {preflabel_en}
+- Document: {doc_id}
+Candidate references (each line: "- <strategy>: <French form in quotes>"):
+{candidates}
+Observed French translations in this document (each line: "- <French form in quotes> × <count>"):
+{distribution}
+
+Return ONLY a JSON object with this exact schema:
+{{
+  "reference": "<the chosen French form, copied exactly, no surrounding quotes, no strategy tag>",
+  "justification": "<one short sentence giving the decisive reason>"
+}}

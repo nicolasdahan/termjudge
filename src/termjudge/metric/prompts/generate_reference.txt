@@ -1,0 +1,89 @@
+You are given a specialised concept in the {domain} domain and ONE English source term that designates it. Produce the French term expected for THIS source term: the term a professional translator of this domain would use for it, consistently, in a document. It must be an ESTABLISHED French term, not a plausible invention; it will serve as a candidate reference against which MT systems are judged.
+
+# Source variation category
+
+The "Source variation category" tells you how the source term relates to the concept's HEAD TERM: it is the variation that turns the head term into this source form (both in English). If the source term IS the head term, the category is "none". Treat it as an AID to find the right French reference, not as a constraint: the reference need not mirror the same kind of variation in French. It hints at what the source term is (an acronym, a reduction, a synonym...) so you produce the French form actually established for it; established usage always decides.
+
+- none : the source term is the head term itself.
+- graphical variation : same content, different written form — acronym or abbreviation (World Health Organization / WHO), symbol (lead / Pb), spelling or hyphenation (trademark / trade mark).
+- reduction : a shortened form — element deleted (airborne dust particle / airborne dust) or an extension dropped (post-authorisation safety study / post-authorisation study).
+- expansion : elements added — an explicit feature, a lexical insertion, or the spelled-out form of an abbreviation (redox / oxidation-reduction).
+- lexical variation : a different lexical designation of the same concept — synonym, quasi-synonym, or attested translation (stress / constraint).
+- morphosyntactic variation : structure or inflection change — constituent order, article, inflection, derivation (employment contract / contract of employment).
+- composite form : several of the above combined; apply the reasoning of each component change.
+
+# Rules
+
+1. Let the variation category guide you toward the French designation actually established for this source term. Often the established French form is of the same kind (an acronym stays an acronym, a reduction stays a reduction), but not always: established usage decides, never a mechanical derivation from the category.
+
+2. Acronyms and abbreviations (category "graphical variation", or "expansion" when the source form is the spelled-out expansion of one). The correct French form depends on how the HEAD TERM is translated into French. Decide among three moves:
+   (a) Invert the acronym — when the concept is translated into French and that French term has an established French acronym, give the FRENCH acronym. E.g. WHO -> OMS (Organisation mondiale de la santé); emergency contraception (EC) -> contraception d'urgence (CU); DNA -> ADN.
+   (b) Keep the source acronym as-is — when the field uses the English acronym unchanged in French. E.g. PCR, BERT, GPT, LLM.
+   (c) Spell it out (rare) — when neither a French acronym nor the borrowed source acronym is used, give the developed French form. E.g. ASAP -> dès que possible.
+   Do NOT assume French spells the term out by default. Your "reference" must match your reasoning: if you conclude the source acronym is used as-is, return that acronym.
+
+3. Keep the reference's SCOPE identical to the source term: add no word it does not contain, drop none it does.
+
+4. For a lexical variation, give the established French term proper to THAT synonym, not the French head term.
+
+5. If French keeps a non-acronym source form unchanged (a proper name, a do-not-translate item), return it unchanged.
+
+6. Do NOT invent. For a non-acronym form, if no established French designation exists and you are not confident, set "generatable" to false. For an acronym, keep the source acronym (rule 2b) instead of declining.
+
+7. Return the reference in canonical form: lemma (singular unless the term is inherently plural), lowercase except proper nouns and acronyms, no surrounding quotes.
+
+# Examples
+
+Each example shows the same fields as the Data block below, then the expected JSON. The examples are illustrative only: NEVER assume the current term behaves like an example it superficially resembles; established usage for THIS term decides.
+
+Example 1
+- English source form: WHO
+- Source variation category: graphical variation
+- Concept head term (English): World Health Organization
+- Concept established French term (head term), if known: Organisation mondiale de la santé
+=> {{"justification": "Acronym inverted: the concept is translated and has an established French acronym.", "generatable": true, "reference": "OMS", "confidence": "high"}}
+
+Example 2
+- English source form: PCR
+- Source variation category: graphical variation
+- Concept head term (English): polymerase chain reaction
+- Concept established French term (head term), if known: réaction en chaîne par polymérase
+=> {{"justification": "Acronym kept as-is: standard French usage borrows PCR unchanged.", "generatable": true, "reference": "PCR", "confidence": "high"}}
+
+Example 3
+- English source form: oxidation-reduction
+- Source variation category: expansion
+- Concept head term (English): redox
+- Concept established French term (head term), if known: redox
+=> {{"justification": "Expansion of an abbreviation: the spelled-out French form of « redox ».", "generatable": true, "reference": "oxydoréduction", "confidence": "high"}}
+
+Example 4
+- English source form: abiotic constraint
+- Source variation category: lexical variation
+- Concept head term (English): abiotic stress
+- Concept established French term (head term), if known: stress abiotique
+=> {{"justification": "Lexical variation: French equivalent of the synonym, not of the head term.", "generatable": true, "reference": "contrainte abiotique", "confidence": "medium"}}
+
+Example 5
+- English source form: post-authorisation study
+- Source variation category: reduction
+- Concept head term (English): post-authorisation safety study
+- Concept established French term (head term), if known: étude de sécurité post-autorisation
+=> {{"justification": "Reduction: the French head term with the dropped element ('sécurité') removed.", "generatable": true, "reference": "étude post-autorisation", "confidence": "medium"}}
+
+# Data
+
+- English source form: {src_form}
+- Source variation category: {variation_category}
+- Concept head term (English): {preflabel_en}
+- Concept established French term (head term), if known: {preflabel_fr}
+English sentences where the source form occurs (evidence of usage, may mention other variants of the concept; possibly truncated):
+{contexts}
+
+Return ONLY a JSON object with this exact schema, keys in this order, with no code fences and no text before or after — "justification" is your reasoning; "generatable", "reference" and "confidence" must follow from it:
+{{
+  "justification": "<one short sentence: how you derived the form, or why no established form exists>",
+  "generatable": <true or false, bare JSON boolean>,
+  "reference": "<the canonical French form; empty string if generatable is false>",
+  "confidence": "<high|medium|low — your confidence that this exact form is the established one>"
+}}

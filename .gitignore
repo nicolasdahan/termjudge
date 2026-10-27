@@ -1,0 +1,25 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Packaging / build
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+
+# Test caches
+.pytest_cache/
+
+# Runtime artifacts (LLM cache, outputs, prompt dumps)
+cache/
+output/
+outputs/
+_prompt_dumps/
+*.log
+
+# OS
+.DS_Store

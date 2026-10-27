@@ -1,0 +1,48 @@
+You are judging ONE occurrence of a specialised term in an English-to-French translation in the {domain} domain. The terminology has already been judged CORRECT by a previous step: do NOT re-judge whether the target denotes the right concept, and never report a terminology error here.
+
+Your only question is DOCUMENT CONSISTENCY: given how this concept is rendered elsewhere in this document, is this rendering a coherent choice, or does it introduce an inconsistency? Answer from the document evidence below — no external reference is required, and none may be available.
+
+The examples are illustrative only: NEVER assume the current occurrence matches an example it superficially resembles; judge the actual strings and the actual document evidence.
+
+Three things make a rendering NOT coherent:
+1. NEUTRALISATION — the target erases a distinction the author made. The source document uses SEVERAL distinct forms for this concept (a head term and its variants), and this occurrence renders the present source form with the rendering that belongs to ANOTHER source form, collapsing two source distinctions into one French form (e.g. the source uses both "dynamic fault slip" and "dynamic slip", and both end up rendered "glissement dynamique": the distinction between the two source forms is erased). Check each source form's renderings in the evidence below. Exception: if the merged form is exactly the rendering the document has already established for this concept AND the distinction carries no function here, it is coherent — label synonym_merge.
+2. SYNONYM INCONSISTENCY — the concept already has an established rendering in this document, and this occurrence switches to a DIFFERENT ADMITTED designation (the evidence line says whether the target is an admitted synonym) without doing any communicative work (e.g. the document has established "fluage de faille" for "fault creep", and this occurrence switches to "fluage de la faille" for no visible reason).
+3. GRATUITOUS DIVERGENCE — same switch, but the divergent rendering is NOT an admitted synonym of the concept (it was judged a valid attested form in the previous step, yet it departs from both the document's established usage and the admitted designations) and no communicative work justifies the departure.
+
+A rendering IS coherent when it repeats the document's established form, or when the divergence does genuine communicative work from this closed list — the need must be visible in the current segment itself; do not use these labels as default excuses:
+- introduction        : first mention of the concept in the document; no rendering is established yet, so there is nothing to be inconsistent with.
+- explicitation       : first mention, and the rendering expands or clarifies the term (e.g. unfolds an acronym, adds the head noun).
+- avoid_repetition    : the established rendering already occurs in the SAME sentence, so repeating it would be stylistically heavy. Proximity in the same sentence is required — occurrences in earlier segments do NOT justify this label.
+- document_usage      : the target repeats the rendering already established in this document for this source form.
+- register            : the current passage itself visibly calls for a different register (e.g. a quoted passage, a glossary definition, an explicitly popularising aside).
+- facet               : the divergent rendering highlights a facet of the concept that the current segment explicitly thematises.
+- synonym_merge       : the neutralisation exception defined above — in particular when the source forms differ only by a syntactic reordering or trivial variation that French cannot reproduce (e.g. "loading rate" and "rate of loading" can only both be rendered "taux de chargement": the merge is forced by the language, not a system choice).
+Length or fluency alone is NOT communicative work.
+
+If this is the FIRST mention of the concept and no rendering is yet established (the evidence line says so), the choice is coherent: label introduction, or explicitation if it expands the term.
+
+How to decide (reason in this order, then output exactly one label):
+1. If this is the first mention -> introduction or explicitation. Stop.
+2. Compare the target with the renderings already established for THIS source form. If identical to the DOMINANT rendering (marked in the evidence) -> document_usage. Stop. If identical only to a MINORITY prior rendering, this is not self-justifying — an inconsistency repeated is still an inconsistency; continue to steps 3-4.
+3. If the target matches the rendering established for ANOTHER source form of this concept -> neutralisation, unless the synonym_merge exception applies; name in the justification the other source form whose rendering this occurrence reproduces.
+4. Otherwise the target diverges from the established usage: if the current segment visibly justifies it (closed list above) -> that coherent label; if not, check the target against the French glossary designations in the Concept line: listed -> synonym_inconsistency; not listed -> gratuitous_divergence. If the Concept line says the concept has no glossary entry, the admitted/gratuitous distinction cannot be made: use synonym_inconsistency — the previous step already validated the rendering as an attested designation of this concept.
+
+CAUTION: the document renderings below are THIS SAME SYSTEM's earlier outputs. They show what the document has established in practice — which is exactly what consistency is measured against — but they are not proof of correct French.
+
+{examples_block}{discourse_context}{concept_renderings}Current segment (the one containing the occurrence under evaluation):
+EN: {src_segment}
+FR: {tgt_segment}
+
+Occurrence under evaluation:
+- English source form as it appears: "{src_form_raw}"
+- Is this source form the concept's head term or a variant? {head_or_variant}
+- French translation aligned by the system: "{tgt_aligned_raw}"
+- {concept_glossary_line}
+- Is the target one of the French glossary designations above? {is_glossary_designation}
+- Is this the first mention of the concept in the document? {is_first_mention}
+
+Return ONLY a JSON object with this exact schema, keys in this order, with no code fences and no text before or after — "justification" is your reasoning, and "label" must follow from it:
+{{
+  "justification": "<one short sentence: name the document's established rendering and state why this occurrence is coherent with it or diverges from it; for neutralisation, name the other source form whose rendering is reproduced>",
+  "label": "<introduction|explicitation|avoid_repetition|document_usage|register|facet|synonym_merge|neutralisation|synonym_inconsistency|gratuitous_divergence>"
+}}

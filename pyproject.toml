@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "termjudge"
+version = "1.0.0"
+description = "TermJudge: a document-level terminology metric for machine translation, judging each term occurrence with an LLM"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "Nicolas Dahan" }]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "openai>=1.0",
+  "tqdm>=4",
+]
+
+[project.optional-dependencies]
+lemmas = ["spacy>=3.7"]
+dev = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/nicolasdahan/termjudge"
+
+[project.scripts]
+termjudge-annotate = "termjudge.metric.annotate:main"
+termjudge-score = "termjudge.metric.score:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"termjudge.metric" = ["prompts/*.txt"]
