@@ -1,0 +1,182 @@
+You are an expert in scientific terminology and linguistic variation, teaching a course on terminology. A student has identified a variant of a head term and needs your help to classify the relationship between the head term and its variant according to the established typology.
+
+You receive:
+- A head term (the preferred form of a technical term)
+- A variant (an alternative term that qualifies the head term)
+- Context examples showing how these terms appear in real scientific texts (when available)
+
+Your task: Determine the type of variation between the head term and its variant. Classify according to the variation typology. Return ONLY a JSON object with the exact format shown in the examples below.
+
+Reference of variation types (in the following example for each label we write headterm/variant ):
+
+VG (Graphical): Written form changes without semantic change (acronyms, spelling, symbols)
+  → VG1: Acronym/initialism (European Parliament/EP, non-governmental organisation/NGO, coronavirus disease 2019/COVID-19)
+  → VG2: Symbol/formula (lead/Pb, CO₂)
+  → VG3: Spelling change (hyphen, space, case, regional: trade mark/trademark, penalise/penalize, case law/case-law)
+  → VG4: Multiple spelling changes (coronavirus disease 2019/Coronavirus Disease-2019)
+  → VG5: Partial abbreviation of one constituent (apparent polar wander path/APW path)
+
+VR (Reduction): Deletion of one or more constituents
+  → VR1: Base reduction — deletion of a base (automatic translation system/automatic translation)
+  → VR2: Extension reduction — deletion of qualifier (coronavirus disease 2019/coronavirus disease, post-authorisation safety study/post-authorisation study)
+  → VR3: Other reduction — ellipsis, blending, or non-standard truncation (middle-capitalisation company/mid-cap)
+
+VE (Expansion): Addition of one or more constituents
+  → VE1: Semantic addition — relevant but redundant attribute (coronavirus disease 2019/pandemic coronavirus disease 2019)
+  → VE2: Explicit form — substitution of a morpheme/lexeme by a fuller form (uninterrupted/without interruption)
+  → VE3: Lexical insertion — nominal, verbal, or paraphrastic addition (dark urine/dark-colored urine)
+  → VE4: Abbreviation development — expansion of a short form into simple or complex unit (redox/oxidation-reduction)
+
+VL (Lexical): Lexical substitution (synonyms, near-synonyms, translations validated as variant in context)
+  → VL1: Simple unit substitution (residues/waste)
+  → VL2: Complex unit — base change only (coronavirus disease 2019/coronavirus infection 2019, action for damages/claim for damages)
+  → VL3: Complex unit — extension/attribute change only (coronavirus disease 2019/novel coronavirus disease, maritime law/marine law, action for damages/action for compensation)
+  → VL4: Complex unit — base AND extension change (coronavirus disease 2019/Wuhan pneumonia, action for damages/claim for compensation)
+
+VMS (Morphosyntactic): Structure or inflection changes (word order, articles, inflection, derivation)
+  → VMS1: Constituent order change (coronavirus disease 2019/2019 coronavirus disease)
+  → VMS2: Addition/removal of article (fixation of nitrogen/fixation of the nitrogen)
+  → VMS3: Inflection change (buying cartel/buyer's cartel, law of tort/law of torts, pass-on of overcharges/passing-on of overcharges)
+  → VMS4: Morphological change (statutory law/statute law, unmargined derivative/non-margined derivative)
+  → VMS5: Structural change — prepositional, adjectival, or syntactic reanalysis (contract of employment/employment contract, asylum application/application for asylum, misconduct in office/official misconduct)
+
+CM (Multiple Changes): Combination of two or more of the above types — combine codes with + (e.g. VG2+VL1, VR1+VMS5)
+
+Important rules:
+1) The (head term, variant) pair you receive is ALWAYS a true terminological
+   variation. Your task is to identify which type of variation it is.
+2) Count the TYPES of changes, not the number of words: one type → VG/VMS/VR/VE/VL,
+   two or more types → CM.
+3) **Acronym rule (critical)**: A variant that looks like an acronym is VG1 ALONE
+   *only* if every letter of the acronym maps to a word actually present in the
+   head term. If the acronym contains one or more letters referring to words
+   ABSENT from the head term, the variant carries an implicit semantic addition
+   and must be classified as CM = VG1+VE1 (or VG1+VL1/VL4 if a word is replaced
+   rather than added). Examples of this hidden-CM pattern:
+     - "topic detection" / "TDT": the final T refers to "tracking" (absent) → CM VG1+VE1
+     - "phrase" / "PP": "P" refers to "prepositional" (absent) → CM VG1+VE1
+     - "language model" / "LM": only 2 letters but the head term itself is fine — this IS VG1.
+   Always check letter-by-letter coverage before settling on plain VG1.
+4) **Partial abbreviation rule (VG5 vs VG1)**: If part of the head term is preserved
+   verbatim in the variant (e.g. "automatic speech recognition system" / "ASR system"
+   keeps "system"), this is VG5 (partial abbreviation), NOT VG1 (full acronym).
+5) **Complex unit rule (VL2/VL3 vs VL1)**: VL1 is reserved for substitution of a
+   *simple* (1-word) head term. If the head term has ≥ 2 words and only the base
+   (or only the modifier) is replaced, classify as VL2 / VL3 — NEVER VL1.
+6) For CM, combine codes with + (e.g., "VG1+VE1", "VL2+VR2", "VMS1+VR2+VL3").
+7) Copy the exact JSON format from the examples — no markdown, no extra text.
+8) Keep justifications brief (1-2 sentences maximum).
+
+When completing the task, follow the examples below:
+
+Head term: European Parliament
+Variant: EP
+{"category": "VG", "subtype": "VG1", "justification": "Acronym formed from the initials of the head term."}
+
+Head term: carbon dioxide
+Variant: CO₂
+{"category": "VG", "subtype": "VG2", "justification": "Chemical formula symbol replacing the complete term."}
+
+Head term: trade mark
+Variant: trademark
+{"category": "VG", "subtype": "VG3", "justification": "Orthographic change: removal of space between words."}
+
+Head term: coronavirus disease 2019
+Variant: Coronavirus Disease-2019
+{"category": "VG", "subtype": "VG4", "justification": "Multiple orthographic changes: capitalization and hyphen added."}
+
+Head term: apparent polar wander path 
+Variant: APW path
+{"category": "VG", "subtype": "VG5", "justification": "Partial abbreviation of the head term."}
+
+Head term: automatic translation system
+Variant: automatic translation
+{"category": "VR", "subtype": "VR1", "justification": "Base reduction: deletion of the base 'system'."}
+
+Head term: coronavirus disease 2019
+Variant: coronavirus disease
+{"category": "VR", "subtype": "VR2", "justification": "Extension reduction: deletion of the modifier '2019'."}
+
+Head term: middle-capitalisation company
+Variant: mid-cap
+{"category": "VR", "subtype": "VR3", "justification": "Partial reduction: deletion of the specification 'company'."}
+
+Head term: coronavirus disease
+Variant: pandemic coronavirus disease
+{"category": "VE", "subtype": "VE1", "justification": "Addition of semantic feature: 'pandemic' specifies the scope."}
+
+Head term: phyllosilicate
+Variant: sheet silicate
+{"category": "VE", "subtype": "VE2", "justification": "Substitution with explicit descriptive form."}
+
+Head term: dark urine
+Variant: dark-colored urine
+{"category": "VE", "subtype": "VE3", "justification": "Lexical insertion: addition of '-colored'."}
+
+Head term: redox
+Variant: oxidation-reduction
+{"category": "VE", "subtype": "VE4", "justification": "Development of abbreviated form into complete form."}
+
+Head term: myocardial infarction
+Variant: heart attack
+{"category": "VL", "subtype": "VL1", "justification": "Lexical substitution of a simple unit by a near-synonym."}
+
+Head term: stress
+Variant: constraint
+{"category": "VL", "subtype": "VL1", "justification": "Lexical substitution by translation: borrowed term replaced by native equivalent."}
+
+Head term: translation system
+Variant: translation model
+{"category": "VL", "subtype": "VL2", "justification": "Base change: 'system' replaced by 'model'."}
+
+Head term: binary classification model
+Variant: logistic regression model
+{"category": "VL", "subtype": "VL3", "justification": "Extension change: modification of the model type."}
+
+Head term: coronavirus disease 2019
+Variant: Wuhan pneumonia
+{"category": "VL", "subtype": "VL4", "justification": "Base + extension change: complete lexical substitution."}
+
+Head term: coronavirus disease 2019
+Variant: 2019 coronavirus disease
+{"category": "VMS", "subtype": "VMS1", "justification": "Change in constituent order: '2019' moved to the beginning."}
+
+Head term: fixation of nitrogen
+Variant: fixation of the nitrogen
+{"category": "VMS", "subtype": "VMS2", "justification": "Addition of definite article 'the'."}
+
+Head term: law of tort
+Variant: law of torts
+{"category": "VMS", "subtype": "VMS3", "justification": "Inflectional change from singular to plural."}
+
+Head term: statutory law
+Variant: statute law
+{"category": "VMS", "subtype": "VMS4", "justification": "Derivation: 'statutory' is the adjectival form of the noun 'statute'."}
+
+Head term: contract of employment
+Variant: employment contract
+{"category": "VMS", "subtype": "VMS5", "justification": "Structural reanalysis: noun+prep phrase replaced by attributive compound."}
+
+Head term: alpha particle
+Variant: α ray
+{"category": "CM", "subtype": "VG2+VL1", "justification": "Two changes: 'alpha'→'α' is graphical (VG2), 'particle'→'ray' is lexical (VL1)."}
+
+Head term: automatic translation system
+Variant: translation model
+{"category": "CM", "subtype": "VL2+VR2", "justification": "Lexical change 'system'→'model' (VL2) and reduction of the extension 'automatic' (VR2)."}
+
+Head term: topic detection
+Variant: TDT
+{"category": "CM", "subtype": "VG1+VE1", "justification": "Acronym (VG1) but the final 'T' refers to 'tracking', a word absent from the head term, so a semantic feature is implicitly added (VE1)."}
+
+Head term: automatic speech recognition system
+Variant: ASR system
+{"category": "VG", "subtype": "VG5", "justification": "'system' is preserved verbatim; only 'automatic speech recognition' is abbreviated. This is partial abbreviation (VG5), not a full acronym (VG1)."}
+
+Head term: similarity measure
+Variant: similarity function
+{"category": "VL", "subtype": "VL2", "justification": "Complex (≥2-word) head term: the base 'measure' is replaced by 'function' while the modifier 'similarity' is preserved → VL2 (base change), not VL1."}
+
+{context_section}
+Head term: {head_term}
+Variant: {variant}

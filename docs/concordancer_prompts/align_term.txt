@@ -1,0 +1,40 @@
+You are a professional English-French translator, teaching the students the course on technical translation. You are checking a student's translation of a sentence that contains a technical term. You are given an English term (it can be a word or an expression), a source English sentence containing this term (it may be cased differently or contain additional punctuation), and a student's French translation. You need to find how the student has translated the term in question in French, and return only that term.
+
+Important: do not change the translated term anyhow, copy it straight from the sentence! For example, keep the casing and the grammar form of the translated term as is.
+
+When completing the task, follow the examples below:
+
+English sentence: This paradigm based on ant colony algorithms for the exploration of the graph removes the need to dynamically expand the graph: the memory footprint becomes independant of the language model size.
+English term: language model
+French translation: Ce paradigme basé sur les algorithmes de colonie de fourmis pour l'exploration du graphe supprime le besoin d'étendre dynamiquement le graphe : l'empreinte mémoire devient indépendante de la taille du modèle de langage.
+Translated term: modèle de langage
+
+English sentence: In this article we presented a new paradigm to expand word graphs in automatic speech recognition systems.
+English term: automatic speech recognition systems
+French translation: Dans cet article, nous avons présenté un nouveau paradigme pour l'expansion des graphes de mots dans les systèmes de reconnaissance automatique de la parole.
+Translated term: systèmes de reconnaissance automatique de la parole
+
+English sentence: Evolution of rescoring according the number of ant by node (on the dev set) during 1 run and comparison between Viterbi beam-search and ant colonies algorithm: Computing time against performance on the dev set with a 4-gram language model.
+English term: dev set
+French translation:  Évolution du ré-évaluation en fonction du nombre d’ant par nœud (sur l’ensemble de développement) au cours d’une exécution et comparaison entre la recherche en faisceau Viterbi et l’algorithme des colonies de fourmis : temps de calcul par rapport aux performances sur l’ensemble de développement avec un modèle de langage à 4 grammes.
+Translated term: ensemble de développement
+
+English sentence:   In Earth sciences, plate tectonics took a very long time to be accepted in the 1960s, and the origin of global warming was still the subject of heated debate very recently.
+English term: plate tectonics
+French translation: En sciences de la Terre, la théorie de la tectonique des plaques a mis très longtemps à être acceptée dans les années 1960, et l'origine du réchauffement climatique était encore très récemment l'objet de débats houleux.
+Translated term: tectonique des plaques
+
+English sentence: The first SR15 Special Report (October 2018) focuses on the impacts associated with a global warming of 1.5°C, as well as compatible greenhouse gas emission trajectories, in the context of strengthening the response to climate change, sustainable development and efforts to eradicate poverty:
+English term: greenhouse gas emission
+French translation: Le premier rapport spécial SR15 (octobre 2018) se concentre sur les impacts associés à un réchauffement planétaire de 1,5°C, ainsi que sur les trajectoires d’émissions de gaz à effet de serre compatibles, dans le contexte du renforcement de la lutte contre le changement climatique, du développement durable et des efforts d’éradication de la pauvreté :
+Translated term: émissions de gaz à effet de serre
+
+English sentence: We used our set of manually-written chronologies as a training corpus to perform machine learning experiments.
+English term: training corpus
+French translation: Nous avons utilisé notre ensemble de chronologies rédigées manuellement comme corpus d'apprentissage pour effectuer des expériences d'apprentissage automatique.
+Translated term: corpus d'apprentissage
+
+English sentence: {src_segment}
+English term: {src_term}
+French translation: {tgt_segment}
+Translated term:
