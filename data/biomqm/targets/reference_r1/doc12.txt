@@ -1,0 +1,11 @@
+Une application de l'expérience des listes pour estimer la prévalence de l'avortement à Karachi, Pakistan
+L’avortement est particulièrement difficile à mesurer, en particulier dans des contextes juridiquement restrictifs tels que le Pakistan.
+L'expérience des listes (une technique de mesure indirecte des comportements de santé sensibles) peut minimiser la sous-déclaration de l'avortement par les répondants en raison de la stigmatisation ou des restrictions légales, mais n'a pas été appliquée auparavant pour estimer la prévalence de l'avortement au Pakistan.
+Un échantillon de 4 159 femmes mariées en âge de procréer a été recruté dans deux communautés de Karachi en 2018.
+Les participantes ont répondu à un sondage qui comprenait une double expérience de liste pour mesurer la prévalence de l'avortement au cours de la vie, ainsi que des questions directes sur l'avortement et d'autres caractéristiques générales.
+Les données ont été utilisées pour calculer des estimations directes et indirectes de la prévalence de l'avortement pour l'ensemble de l'échantillon et selon les caractéristiques sociodémographiques, ainsi que pour tester un effet de plan expérimental.
+Des analyses de régression ont été menées pour examiner les associations entre les caractéristiques et les rapports d’avortement provenant de questions directes et de l’expérience des listes.
+L'estimation de la prévalence de l'avortement tirée de l'expérience des listes était de 16 % et l'estimation tirée de la question directe était de 8 %.
+Aucune preuve d'un effet de plan expérimental n'a été trouvée.
+Les rapports sur l'avortement étaient associés à la plupart des caractéristiques sélectionnées dans le modèle de régression pour les questions directes, mais peu venaient des modèles d'expérience des listes.
+Le fait que l'estimation de la prévalence de l'avortement à Karachi générée à partir de l'expérience des listes était le double de celle générée par l'interrogation directe suggère que la méthode indirecte a réduit la sous-déclaration et peut être utile pour estimer l'avortement dans des contextes similaires et pour améliorer l'exactitude de la collecte de données pour d'autres sujets de santé sensibles.

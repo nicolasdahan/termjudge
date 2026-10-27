@@ -1,0 +1,11 @@
+Facteurs de risque associés aux résultats moins favorables dans l'étude COVID-19 : une étude rétrospective en Arabie Saoudite
+L'émergence rapide de la nouvelle maladie à coronavirus 2019 (COVID-19) a entraîné des millions de patients infectés et des centaines de milliers de décès dans le monde.
+La prestation des soins de santé est compromise en raison de la montée en flèche du nombre de patients infectés au cours de cette pandémie.
+Cette étude visait à évaluer les facteurs de risque associés au pronostic défavorable chez les patients atteints de la COVID-19 en Arabie saoudite.
+Il s’agissait d’une étude de cohorte rétrospective multicentrique qui comprenait tous les cas de COVID-19 confirmés en laboratoire avec des résultats définitifs en Arabie saoudite en mars 2020.
+Les données démographiques, les antécédents cliniques, la comorbidité et les résultats ont été extraits de la base de données du réseau national de surveillance électronique de la santé (RSENS).
+Nous avons utilisé des modèles de régression logistique pour calculer les rapports de cotes bruts et ajustés (RC) afin d'explorer les facteurs de risque pour les résultats critiques (admission en unité de soins intensifs ou décès) parmi les cas de COVID-19.
+Nous avons inclus 648 patients positifs à la COVID-19 avec un âge médian de 34 ans.
+Parmi ce nombre, 11,9 % faisaient partie du groupe critique.
+Les facteurs de risque associés à des résultats plus graves comprenaient les hommes (RC=1,92), l'âge >60 ans (RC=3,65), les maladies cardiaques (RC=3,05), les maladies respiratoires chroniques (RC=2,29) et les cas avec deux comorbidités ou plus (RC=2,57) après ajustement en fonction de l'âge et du sexe ; tous avaient des valeurs P significatives <0,05. Les facteurs de risque indépendants pour les résultats critiques parmi les cas de COVID-19 comprennent la vieillesse, les hommes, les patients cardiaques, les maladies respiratoires chroniques et la présence de deux comorbidités ou plus.
+Nous recommandons de concevoir un système unique à plusieurs éléments pour pronostiquer les patients atteints de la COVID-19.

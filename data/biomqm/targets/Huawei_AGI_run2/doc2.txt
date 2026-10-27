@@ -1,0 +1,11 @@
+Facteurs de risque associés à des résultats plus mauvais dans l'étude Covid-19: étude rétrospective en arabie saoudite
+L'émergence rapide de la nouvelle maladie à coronavirus 2019 (Covid-19) a entraîné des millions de patients infectés et des centaines de milliers de décès dans le monde.
+La prestation des services de santé est compromise en raison de l'augmentation du nombre de patients infectés au cours de cette pandémie.
+La présente étude visait à évaluer les facteurs de risque associés à un mauvais pronostic chez les patients atteints de la Covid-19 en arabie saoudite.
+Il s'agissait d'une étude de cohorte rétrospective multicentrique incluant tous les cas de Covid-19 confirmés en laboratoire avec des résultats définitifs en arabie saoudite en mars 2020.
+Les données démographiques, les antécédents cliniques, la comorbidité et les résultats ont été extraits de la base de données du réseau national de surveillance électronique de la santé (rses).
+Nous avons utilisé des modèles de régression logistique pour calculer les rapports de cotes (rc) bruts et ajustés afin d'explorer les facteurs de risque de résultats critiques (admission ou décès à l'unité de soins intensifs) parmi les cas de Covid-19.
+Nous avons inclus 648 patients positifs à la Covid-19, âgés en moyenne de 34 ans.
+Parmi ceux-ci, 11,9% étaient dans le groupe critique.
+Les facteurs de risque associés à une issue plus défavorable incluaient les hommes (or=1,92), les personnes âgées de plus de 60 ans (or=3,65), les maladies cardiaques (or=3,05), les maladies respiratoires chroniques (or=2,29) et les cas présentant deux comorbidités ou plus (or=2,57) après ajustement en fonction de l'âge et du sexe; tous avaient des valeurs de p significatives < 0,05. les facteurs de risque indépendants pour des résultats critiques parmi les cas Covid-19 incluaient l'âge, les hommes, les patients cardiaques, les maladies respiratoires chroniques et la présence de deux comorbidités ou plus.
+Nous recommandons la conception d'un système unique d'échelle multiélémentaire pour pronostiquer les patients atteints de Covid-19.

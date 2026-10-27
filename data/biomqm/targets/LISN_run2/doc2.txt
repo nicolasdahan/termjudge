@@ -1,0 +1,11 @@
+Facteurs de risque associés à de pires résultats en Arabie saoudite : étude rétrospective
+L'émergence rapide de la nouvelle maladie à coronavirus 2019 (COVID-19) a entraîné des millions de patients infectés et des centaines de milliers de décès dans le monde.
+La prestation des services de soins de santé est compromise en raison de la hausse du nombre de patients infectés durant cette pandémie.
+Cette étude visait à évaluer les facteurs de risque associés à un mauvais pronostic chez les patients atteints de COVID-19 en Arabie saoudite.
+Il s'agissait d'une étude de cohorte rétrospective multicentrique incluant tous les cas confirmés en laboratoire de DIOV-19 avec des résultats définitifs en Arabie saoudite en mars 2020.
+Les données démographiques, les antécédents cliniques, la comorbidité et les résultats ont été extraites de la base de données du Réseau national de surveillance électronique de la santé (RSSN).
+Nous avons utilisé des modèles de régression logistique pour calculer les rapports de cotes (RC) bruts et ajustés afin d'explorer les facteurs de risque des résultats critiques (admission en unité de soins intensifs ou décès) parmi les cas de DIOV-19.
+Nous avons inclus 648 patients COVID-19 positifs avec un âge médian de 34 ans.
+Parmi ceux-ci, 11,9 % étaient dans le groupe critique.
+Les facteurs de risque associés à des critères de jugement pires incluaient les hommes (OR=1,92), l’âge >60 ans (OR=3,65), les maladies cardiaques (OR=3,05), les maladies respiratoires chroniques (OR=2,29), et les cas présentant au moins deux comorbidités (OR=2,57) après ajustement en fonction de l’âge et du sexe ; tous présentaient des valeurs de P significatives <0,05. Les facteurs de risque indépendants pour des critères de jugement critiques parmi les cas COVID-19 incluent l’âge avancé, les hommes, les patients cardiaques, les maladies respiratoires chroniques, et la présence de deux comorbidités ou plus.
+Nous recommandons de concevoir un système d'échelle multi-item unique pour pronostiquer les patients COVID-19.

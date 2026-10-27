@@ -1,0 +1,11 @@
+Further investigation of the characteristics and biological function of Eimeria tenella apical membrane antigen 1
+Apical membrane antigen 1 (AMA1) is a type I integral membrane protein that is highly conserved in apicomplexan parasites.
+Previous studies have shown that Eimeria tenella AMA1 (EtAMA1) is critical for sporozoite invasion of host cells.
+Here, we show that EtAMA1 is a microneme protein secreted by sporozoites, confirming previous results.
+Individual and combined treatment with antibodies of EtAMA1 and its interacting proteins, E. tenella rhoptry neck protein 2 (EtRON2) and Eimeria-specific protein (EtESP), elicited significant anti-invasion effects on the parasite in a concentration-dependent manner.
+The overexpression of EtAMA1 in DF-1 cells showed a significant increase of sporozoite invasion.
+Isobaric tags for relative and absolute quantitation (iTRAQ) coupled with LC-MS/MS were used to screen differentially expressed proteins (DEPs) in DF-1 cells transiently transfected with EtAMA1.
+In total, 3953 distinct nonredundant proteins were identiﬁed and 163 of these were found to be differentially expressed, including 91 upregulated proteins and 72 downregulated proteins.
+The DEPs were mainly localized within the cytoplasm and were involved in protein binding and poly(A)-RNA binding.
+KEEG analyses suggested that the key pathways that the DEPs belonged to included melanogenesis, spliceosomes, tight junctions, and the FoxO and MAPK signaling pathways.
+The data in this study not only provide a comprehensive dataset for the overall protein changes caused by EtAMA1 expression, but also shed light on EtAMA1's potential molecular mechanisms during Eimeria infections.

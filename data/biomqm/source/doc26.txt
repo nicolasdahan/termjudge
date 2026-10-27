@@ -1,0 +1,9 @@
+Total containment of population and number of confirmed cases of COVID-19 in England, Belgium, France and Italy
+We analyze the impact of total population containment on the evolution of the growth rate of confirmed cases of covid-19 by controlling the results by the situation observed in a country that has not applied this measure.
+We conduct the study in four European countries, namely England, Belgium, France and Italy, taking Sweden as a control country that did not confine its population.
+To do so, we use the Interrupted Time Series Method (ISTA).
+Comparisons of the post-intervention linear trends of covid-19 confirmed cases from England, Belgium and France with that of Sweden show no statistically significant difference.
+Comparison of the post-intervention linear trends of covid-19 confirmed cases from Italy with that from Sweden shows a positive and statistically significant difference.
+It reflects a dynamic in the growth rate of confirmed cases in Italy higher than that observed in Sweden despite the total containment of the population.
+The results obtained therefore lead to the conclusion that the measure of total population containment is ineffective in the countries of the sample.
+They suggest that the evolution of confirmed cases of covid-19 could be the result of a combination of other factors, and not specifically of total population containment.

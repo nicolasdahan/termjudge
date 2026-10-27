@@ -1,0 +1,8 @@
+The Revised National Tuberculosis Control Programme (RNTCP) in Andhra Pradesh, India, introduced TrueNat We compared the number of presumptive TB cases tested and the number (proportion) of microbiologically positive before (January-August 2018) and after (January-August 2019) the deployment of TrueNat. We interviewed laboratory technicians and Senior TB Laboratory Supervisor from 25 randomly selected TUs to assess operational feasibility.
+In 2018, 10.5% (range 8.9-13.1) of 245,989 presumptive cases tested were positive.
+In 2019, of the 185,435 presumptive cases tested, 13.7% (range 9.6-18.9) were positive.
+The proportion of presumptive TB cases in whom MTB was detected using TrueNat was 14.4% (range 10.0-21.2).
+TrueNat significantly increased case detection (incidence rate ratio [IRR] 1.30; 95%CI 1.15-1.46), yielding an additional 18 TB cases per 100 000 population.
+Laboratory technicians became comfortable in performing TrueNat after a median of 10 tests (interquartile range 5-17.5).
+Invalid reports declined from 6.8% to 3.6%.
+The deployment of TrueNat as POC diagnostic test improved case detection and was operationally feasible under RNTCP.

@@ -1,0 +1,11 @@
+Recherche ultérieure des caractéristiques et de la fonction biologique de l'antigène 1 de la membrane apicale d' Eimeria tenella
+L'antigène 1 de la membrane apicale (AMA1) est une protéine membranaire intégrale de type I qui est hautement conservée dans les parasites apicomplexes.
+Des études antérieures ont montré que Eimeria tenella AMA1 (EtAMA1) est critique pour l'invasion des sporozoïtes des cellules hôtes.
+Nous montrons ici que EtAMA1 est une protéine du micronème sécrétée par les sporozoïtes, ce qui confirme les résultats antérieurs.
+Le traitement individuel et combiné avec des anticorps de EtAMA1 et de ses protéines interagissant avec E. tenella rhoptry cervical protein 2 (EtRON2) et de la protéine spécifique d' Eimeria (EtESP), a provoqué des effets anti-invasion significatifs sur le parasite de manière concentration-dépendante.
+La surexpression de EtAMA1 dans les cellules DF-1 a montré une augmentation significative de l'invasion des sporozoïtes.
+Des marqueurs isobariques pour la quantification relative et absolue (iTRAQ) couplées à LC-MS/MS ont été utilisés pour cribler des protéines exprimées de manière différentielle (DEP) dans des cellules DF-1 transfectées transitoirement avec EtAMA1.
+Au total, 3953 protéines non redondantes distinctes ont été identifiées et 163 d'entre elles se sont révélées être exprimées de manière différentielle, dont 91 protéines à régulation positive et 72 protéines à régulation négative.
+Les DEP étaient principalement localisés dans le cytoplasme et étaient impliqués dans la liaison aux protéines et la liaison aux poly(A)-ARN.
+Les analyses de KEEG ont suggéré que les voies clés que les DEP appartenaient à la mélanogenèse, aux épissosomes, aux jonctions serrées et aux voies de signalisation FoxO et MAPK.
+Les données de cette étude fournissent non seulement un ensemble complet de données sur les changements protéiques globaux causés par l'expression d'EtAMA1, mais aussi une lumière sur les mécanismes moléculaires potentiels d'EtAMA1 au cours des infections à Eimeria.

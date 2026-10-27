@@ -1,0 +1,12 @@
+Iron deficiency in adults : to understand what biological evaluation should be carried out
+Iron is a major mineral in the human body.
+It participates in various metabolisms, including oxygen transport in hemoglobin.
+Iron deficiency (ID) is characterized by a deficit in circulating iron.
+There are two types of ID : 1) absolute ID (AID), in case of decrease in iron reserves and circulating iron, or 2) functional ID (FID), in case of decrease in circulating iron, while reserves are preserved or increased.
+AID is mainly due to bleeding, usually gastrointestinal, while FID is linked to the inflammatory syndrome.
+AID is characterized by low serum ferritin and transferrin saturation (TS).
+Hypochromic microcytic anemia is frequent.
+Furthermore, C-reactive protein levels are high, and there is non-regenerative non-macrocytic anemia.
+FID is characterized by elevated serum ferritin, normal or low TS, and normal sTfR levels.
+New biological tests (serum hepcidin) may be useful in case of doubt.
+However, they are not yet commonly used.

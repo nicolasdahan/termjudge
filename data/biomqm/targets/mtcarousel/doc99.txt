@@ -1,0 +1,7 @@
+Rhabdomyolyse : prise en charge précoce
+La rhabdomyolyse est définie par une myalgie, un myoedème potentiellement douloureux et une faiblesse musculaire due à la mort de la fibre musculaire dans le muscle strié.
+Les étiologies fréquentes comprennent l’effort physique, l’intoxication (alcool, drogues et médicaments) et les traumatismes physiques.
+L'épuisement de l'adénosine triphosate (ATP) des myocytes entraîne une augmentation du calcium intracellulaire et de la mort des myocytes.
+Le diagnostic repose sur les niveaux de créatine kinase (CK).
+Le spectre clinique de la rhabdomyolyse comprend une augmentation asymptomatique du taux de CK ainsi que des complications graves, mettant en jeu le pronostic vital, telles que l'insuffisance rénale aiguë et les troubles électrolytiques.
+Le traitement est basé sur la prévention et le traitement des complications.

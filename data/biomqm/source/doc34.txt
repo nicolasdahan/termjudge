@@ -1,0 +1,6 @@
+The simplified trachoma grading system, amended
+A simplified grading system for trachoma was published by the World Health Organization (WHO) in 1987.
+Intended for use by non-specialist personnel working at community level, the system includes five signs, each of which can be present or absent in any eye: (i) trachomatous trichiasis; (ii) corneal opacity; (iii) trachomatous inflammation-follicular; (iv) trachomatous inflammation-intense; and (v) trachomatous scarring.
+Though neither perfectly sensitive nor perfectly specific for trachoma, these signs have been essential tools for identifying populations that need interventions to eliminate trachoma as a public health problem.
+In 2018, at WHO's 4th global scientific meeting on trachoma, the definition of one of the signs, trachomatous trichiasis, was amended to exclude trichiasis that affects only the lower eyelid.
+This paper presents the amended system, updates its presentation, offers notes on its use and identifies areas of ongoing debate.

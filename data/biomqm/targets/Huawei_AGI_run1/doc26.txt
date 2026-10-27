@@ -1,0 +1,9 @@
+Confinement total de la population et nombre de cas confirmés de Covid-19 en angleterre, en belgique, en france et en italie
+Nous analysons l'impact du confinement de la population totale sur l'évolution du taux de croissance des cas confirmés de Covid-19 en contrôlant les résultats par la situation observée dans un pays qui n'a pas appliqué cette mesure.
+Nous réalisons l'étude dans quatre pays européens, à savoir l'angleterre, la belgique, la france et l'italie, en prenant la suède comme pays de contrôle qui n'a pas confiné sa population.
+Pour ce faire, nous utilisons la méthode des séries temporelles interrompues (ista).
+Les comparaisons des tendances linéaires post-interventionnelles des cas confirmés de Covid-19 en angleterre, en belgique et en france avec celles de la suède ne montrent aucune différence statistiquement significative.
+La comparaison des tendances linéaires post-interventionnelles des cas confirmés de Covid-19 en italie avec celles en suède montre une différence positive et statistiquement significative.
+Il reflète une dynamique du taux de croissance des cas confirmés en italie supérieure à celle observée en suède malgré le confinement total de la population.
+Les résultats obtenus permettent donc de conclure que la mesure de confinement total de la population est inefficace dans les pays de l'échantillon.
+Ils suggèrent que l'évolution des cas confirmés de Covid-19 pourrait être le résultat d'une combinaison d'autres facteurs, et non pas spécifiquement d'un confinement total de la population.

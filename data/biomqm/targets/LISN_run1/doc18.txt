@@ -1,0 +1,5 @@
+Le biais cognitif dans le contexte de l’épidémie
+En lien avec la portée et la durée de la pandémie de COVID-19, le jugement clinique des cliniciens et des médecins praticiens pourrait être influencé de telle sorte que des erreurs diagnostiques (retards et inexactitudes) puissent survenir.
+Nous rappelons ici, dans deux scénarios cliniques, la nécessité constante pour les praticiens de refléter le processus de diagnostic afin d’éviter l’«effet tunnel », ce qui peut entraîner un retardement des maladies infectieuses courantes et fréquentes.
+Les symptômes pseudo-grippaux présentés par ces patients (fièvre, myalgie et asthénie...) ont rapidement incité nos collègues de la salle d’urgence à soupçonner l’infection par le CoV-SRAS.
+Cependant, d’autres examens, dont l’imagerie et les hémocultures, ont mis en évidence des pathologies infectieuses tout à fait différentes mais courantes, potentiellement mortelles.

@@ -1,0 +1,11 @@
+An Application of the List Experiment to Estimate Abortion Prevalence in Karachi, Pakistan
+Abortion is particularly difficult to measure, especially in legally restrictive settings such as Pakistan.
+The List Experiment-a technique for measuring sensitive health behaviors indirectly-may minimize respondents' underreporting of abortion due to stigma or legal restrictions, but has not been previously applied to estimate abortion prevalence in Pakistan.
+A sample of 4,159 married women of reproductive age were recruited from two communities of Karachi in 2018.
+Participants completed a survey that included a double list experiment to measure lifetime abortion prevalence, as well as direct questions about abortion and other background characteristics.
+Data were used to calculate direct and indirect estimates of abortion prevalence for the overall sample and by sociodemographic characteristics, as well as to test for a design effect.
+Regression analyses were conducted to examine associations between characteristics and abortion reporting from direct questioning and the list experiment.
+The estimate of abortion prevalence from the list experiment was 16%; the estimate from the direct question was 8%.
+No evidence of a design effect was found.
+Abortion reporting was associated with most selected characteristics in the regression model for direct questioning, but with few in the list experiment models.
+That the estimate of abortion prevalence in Karachi generated from the list experiment was twice that generated from direct questioning suggests that the indirect method reduced underreporting, and may have utility to estimate abortion in similar settings and to improve the accuracy of data collecting for other sensitive health topics.

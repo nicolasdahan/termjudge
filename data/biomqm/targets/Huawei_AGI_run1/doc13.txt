@@ -1,0 +1,11 @@
+Nouvelles recherches sur les caractéristiques et la fonction biologique de l'antigène 1 de la membrane apicale d'eimeria tenella
+L'antigène membranaire apical 1 (ama1) est une protéine membranaire intégrale de type i hautement conservée chez les parasites apicomplexes.
+Des études antérieures ont montré que eimeria tenella ama1 (etama1) est critique pour l' invasion des cellules hôtes par les sporozoïtes.
+Ici, nous montrons que etama1 est une protéine de microneme sécrétée par des sporozoïtes, confirmant les résultats précédents.
+Un traitement individuel et combiné avec des anticorps de etama1 et de ses protéines d'interaction, la protéine 2 du col de rhoptry de e. tenella (etron2) et la protéine spécifique d'eimeria (etesp), a provoqué des effets anti-invasion significatifs sur le parasite d'une manière dépendante de la concentration.
+La surexpression de etama1 dans les cellules df-1 a montré une augmentation significative de l'invasion des sporozoïtes.
+Des marqueurs isobariques pour la quantification relative et absolue (itraq) couplés à lc-ms/ms ont été utilisés pour cribler des protéines exprimées de manière différentielle (dep) dans des cellules df-1 transfectées de manière transitoire avec etama1.
+Au total, 3953 protéines distinctes non redondantes ont été identifiées et 163 d'entre elles se sont avérées être exprimées de manière différentielle, y compris 91 protéines régulées à la hausse et 72 protéines régulées à la baisse.
+Les dep étaient principalement localisés dans le cytoplasme et étaient impliqués dans la liaison aux protéines et la liaison au poly (a) -arn.
+Les analyses du keeg ont suggéré que les voies principales auxquelles appartenaient les dep incluaient la mélanogenèse, les spliceosomes, les jonctions serrées et les voies de signalisation de foxo et mapk.
+Les données de cette étude fournissent non seulement un ensemble complet de données sur les modifications protéiques globales provoquées par l'expression de etama1, mais mettent également en lumière les mécanismes moléculaires potentiels de etama1 au cours des infections à eimeria.

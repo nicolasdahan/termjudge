@@ -1,0 +1,11 @@
+Risk factors associated with worse outcomes in COVID-19: a retrospective study in Saudi Arabia
+The rapid emergence of the novel coronavirus disease 2019 (COVID-19) has resulted in millions of infected patients and hundreds of thousands of deaths worldwide.
+Health care services delivery is being compromised due to the surge in the number of infected patients during this pandemic.
+This study aimed to assess the risk factors associated with poor prognosis among COVID-19 patients in Saudi Arabia.
+This was a multi-centre retrospective cohort study that included all laboratory-confirmed COVID-19 cases with definitive outcomes in Saudi Arabia during March 2020.
+Demographic, clinical history, comorbidity and outcomes data were retrieved from the National Health Electronic Surveillance Network (HESN) database.
+We used logistic regression models to calculate crude and adjusted odds ratios (OR) to explore risk factors for critical outcomes (intensive care unit admission or death) among COVID-19 cases.
+We included 648 COVID-19-positive patients with a median age of 34 years.
+Of these, 11.9% were in the critical group.
+Risk factors associated with worse outcomes included males (OR=1.92), age >60 years (OR=3.65), cardiac diseases (OR=3.05), chronic respiratory diseases (OR=2.29), and cases with two or more comorbidities (OR=2.57) after adjusting for age and sex; all had significant P-values <0.05. Independent risk factors for critical outcomes among COVID-19 cases include old age, males, cardiac patients, chronic respiratory diseases, and the presence of two or more comorbidities.
+We recommend designing a unique multi-item scale system to prognosticate COVID-19 patients.

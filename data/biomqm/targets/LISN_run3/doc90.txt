@@ -1,0 +1,12 @@
+Conservation de l'hôte par leurs parasites: surveillance moléculaire des micro-organismes vecteurs chez les chauves-souris à l'aide de mouches de chauve-souris ectoparasitaires
+La plupart des vertébrés hébergent une grande variété de parasites hématophages, qui peuvent jouer un rôle important dans la transmission de micro-organismes transmis par des vecteurs à des hôtes.
+La surveillance s'effectue généralement par prélèvement de sang et/ou d'échantillons de tissus provenant d'hôtes vertébrés.
+Il existe de multiples méthodes permettant d'obtenir des échantillons qui peuvent être stockés pendant des décennies s'ils sont correctement conservés.
+Cependant, le prélèvement sanguin est considéré comme une méthode invasive et peut être dangereux pour l'individu échantillonné.
+Dans cette étude, nous avons étudié l'utilisation d'ectoparasites comme outil d'acquisition d'informations moléculaires sur la présence et la diversité de micro-organismes infectieux dans les populations hôtes.
+Nous avons testé la présence de trois micro-organismes distincts à transmission vectorielle dans le sang de chauve-souris et dans les mouches de chauve-souris : la bactérie Bartonella, le genre malaria Polychromophilus sp. (Apicomplexa) et Trypanosoma sp. (Kinetoplastea).
+Nous avons détecté la présence de ces micro-organismes chez les chauves-souris et chez leurs mouches de chauve-souris, à l'exception de Trypanosoma sp. dans les mouches de chauve-souris sud-africaines.
+De plus, nous avons trouvé Bartonella sp. dans les mouches de chauves-souris d'une population en Espagne, ce qui suggère sa présence dans la population hôte même si elle n'était pas détectée chez les chauves-souris.
+L'infection à Bartonella et Polychromophilus a montré la prévalence la plus élevée dans les populations de chauves-souris et de mouches de chauve-souris.
+Les infections uniques, co- et triples étaient également fréquemment présentes dans les deux cas.
+Nous soulignons l'utilisation d'ectoparasites hématophages pour étudier la présence de micro-organismes infectieux dans le sang hôte et son utilisation comme méthode alternative de prélèvement moins invasive.

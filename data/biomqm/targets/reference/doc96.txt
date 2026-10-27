@@ -1,0 +1,6 @@
+Les myélinosomes : une nouvelle voie de contrôle de la qualité des protéines
+Le maintien de la protéostasie cellulaire repose sur deux voies de dégradation : le protéasome et l'autophagie.
+Nous décrivons ici une nouvelle voie de protéostasie évitant la dégradation de protéines anormales tout en les transportant à l'extérieur de la cellule à l'aide de nanovésicules appelées myélinosomes.
+Ces myélinosomes sont produits dans des situations pathologiques ou de stress en relation avec des facteurs génétiques ou environnementaux.
+Les Vesicles myélinosomiques sont des structures membranaires à plusieurs couches de taille nanométrique qui ressemblent à une gaine de myéline.
+Il a récemment été démontré dans deux modèles de maladies génétiques (maladie de Huntington et mucoviscidose) que les myélinosomes sont importants pour éliminer les protéines mutantes dans un processus de sécrétion inhabituel, empêchant ainsi leur accumulation et leur agrégation dans les cellules.

@@ -1,0 +1,6 @@
+Myelinosomes: A new pathway of protein quality control
+Maintenance of cell proteostasis relies on two degradation pathways: proteasome and autophagy.
+Here we describe a new proteostasis pathway avoiding degradation of abnormal proteins yet carrying them outside the cell using nanovesicles called myelinosomes.
+These myelinosomes are produced in pathological or stress situations in relation with genetic or environmental factors.
+Myelinosome vesicles are nano-sized multi-stacked membrane structures, resembling myelin sheath.
+It has recently been shown in two models of genetic diseases (Huntington's disease and cystic fibrosis) that myelinosomes are important for eliminating mutant proteins in an unusual secretory process, thus preventing their accumulation and aggregation in cells.

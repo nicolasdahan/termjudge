@@ -1,0 +1,11 @@
+Application de la liste Expérimentation à la prévalence de l'avortement estimé à Karachi, Pakistan
+L’avortement est particulièrement difficile à mesurer, en particulier dans des contextes légaux restrictifs comme le Pakistan.
+La technique d'expérimentation de la liste pour mesurer les comportements de santé sensibles peut indirectement minimiser la sous-déclaration par les répondants de l'avortement en raison de la stigmatisation ou des restrictions juridiques, mais n'a pas été appliquée auparavant pour estimer la prévalence de l'avortement au Pakistan.
+Un échantillon de 4 159 femmes mariées en âge de procréer ont été recrutées dans deux communautés de Karachi en 2018.
+Les participants ont répondu à un sondage qui comprenait une expérience en double liste pour mesurer la prévalence de l'avortement au cours de leur vie, ainsi que des questions directes sur l'avortement et d'autres caractéristiques de fond.
+Les données ont été utilisées pour calculer des estimations directes et indirectes de la prévalence de l'avortement pour l'échantillon global et selon les caractéristiques sociodémographiques, ainsi que pour tester l'effet de conception.
+Des analyses de régression ont été effectuées afin d'examiner les liens entre les caractéristiques et la déclaration de l'avortement par questionnement direct et l'expérience de la liste.
+L'estimation de la prévalence de l'avortement à partir de la liste était de 16 % ; l'estimation à partir de la question directe était de 8 %.
+Aucune preuve d'un effet de conception n'a été trouvée.
+Les rapports d'avortement étaient associés à la plupart des caractéristiques sélectionnées dans le modèle de régression pour le questionnement direct, mais peu dans les modèles d'expérience de liste.
+Que l'estimation de la prévalence de l'avortement à Karachi générée à partir de l'expérience de liste était deux fois celle générée à partir du questionnement direct suggère que la méthode indirecte a réduit la sous-déclaration, et pourrait avoir une utilité pour estimer l'avortement dans des contextes similaires et pour améliorer la précision de la collecte de données pour d'autres sujets de santé sensibles.

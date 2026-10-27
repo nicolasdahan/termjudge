@@ -1,0 +1,12 @@
+Conservation des hôtes grâce à leurs parasites : surveillance moléculaire des micro-organismes à transmission vectorielle chez les chauves-souris à l'aide de mouches ectoparasites des chauves-souris
+La plupart des vertébrés hébergent une grande variété de parasites hématophages, qui peuvent jouer un rôle important dans la transmission vectorielle des micro-organismes aux hôtes.
+La surveillance est généralement effectuée en recueillant des échantillons de sang et/ou de tissus chez des hôtes vertébrés.
+Il existe plusieurs méthodes pour obtenir des échantillons, qui peuvent être stockés pendant des décennies s'ils sont correctement conservés.
+Cependant, le prélèvement sanguin est considéré comme une méthode invasive et peut éventuellement être nocif pour la personne échantillonnée.
+Dans cette étude, nous avons analysé l'utilisation des ectoparasites comme outil d'acquisition d'informations moléculaires sur la présence et la diversité des micro-organismes infectieux dans les populations hôtes.
+Nous avons testé la présence de trois micro-organismes pathogènes distincts dans le sang et les mouches des chauves-souris : la bactérie Bartonella, les parasites du paludisme de type Polychromophilus (Apicomplexa) et les parasites de type Trypanosoma (Kinetoplastea).
+Nous avons détecté la présence de ces micro-organismes chez les chauves-souris et chez les mouches de chauves-souris, à l'exception des parasites de type Trypanosoma chez les mouches de chauves-souris sud-africaines.
+En outre, nous avons trouvé Bartonella sp. dans les mouches des chauves-souris d'une population en Espagne, ce qui suggère sa présence dans la population hôte même si elle n'est pas détectée chez les chauves-souris.
+Les infections par les parasites Bartonella et Polychromophilus ont montré la prévalence la plus élevée dans les populations de chauves-souris et de mouches de chauves-souris.
+Les infections simples, conjointes et triples étaient également fréquentes dans les deux cas.
+Nous soulignons l'utilisation d'ectoparasites hématophages pour étudier la présence de micro-organismes infectieux dans le sang de l'hôte et son utilisation comme méthode d'échantillonnage alternative et moins invasive.

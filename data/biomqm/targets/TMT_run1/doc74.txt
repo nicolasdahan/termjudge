@@ -1,0 +1,8 @@
+Le Programme national révisé de lutte antituberculeuse (PNLAC) à Andhra Pradesh, en Inde, a introduit TrueNat Nous avons comparé le nombre de cas présumés de tuberculose testés et le nombre (proportion) de cas microbiologiquement positifs avant (janvier-août 2018) et après (janvier-août 2019) le déploiement de TrueNat.
+En 2018, 10,5 % (intervalle 8,9-13,1) des 245 989 cas présumés testés étaient positifs.
+En 2019, sur les 185 435 cas présumés testés, 13,7 % (intervalle de 9,6-18,9) étaient positifs.
+La proportion de cas présumés de TB chez lesquels la M. tuberculosis a été détectée à l’aide de TrueNat était de 14,4 % (intervalle de 10,0 à 21,2).
+TrueNat a significativement augmenté la détection des cas (rapport des taux d’incidence [RIN] 1,30; IC à 95 % 1,15-1,46), donnant 18 cas supplémentaires de TB pour 100 000 habitants.
+Les techniciens de laboratoire sont devenus à l'aise d'effectuer TrueNat après une médiane de 10 tests (intervalle interquartile 5-17,5).
+Les déclarations invalides sont passées de 6,8 % à 3,6 %.
+Le déploiement de TrueNat comme test diagnostique POC a amélioré la détection des cas et était opérationnellement faisable dans le cadre du RNTCP.

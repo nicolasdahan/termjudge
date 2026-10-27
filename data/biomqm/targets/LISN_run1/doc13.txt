@@ -1,0 +1,11 @@
+Étude plus approfondie des caractéristiques et de la fonction biologique de l’antigène 1 de la membrane apicale d’Eimeria tenella
+L’antigène 1 de la membrane apicale (AMA1) est une protéine membranaire intégrale de type I qui est très conservée chez les parasites apicomplexes.
+Des études antérieures ont montré que l’Eimeria tenella AMA1 (EtAMA1) est critique pour l’invasion sporozoïte des cellules hôtes.
+Nous montrons ici que EtAMA1 est une protéine micronéme sécrétée par les sporozoïtes, confirmant ainsi les résultats antérieurs.
+Le traitement individuel et combiné avec des anticorps de EtAMA1 et ses protéines interagissantes, la protéine 2 du col de la rhoptry d’E. tenella (EtRON2) et la protéine spécifique d’Eimeria (EtESP), a induit des effets anti-invasion importants sur le parasite d’une manière dépendante de la concentration.
+La surexpression de EtAMA1 dans les cellules DF-1 a montré une augmentation significative de l’invasion des sporozoïtes.
+Des marqueurs isobares pour la quantification relative et absolue (iTRAQ) couplés à LC-MS/MS ont été utilisés pour cribler les protéines exprimées différentiellement (DEP) dans les cellules DF-1 transfectées transitoirement par EtAMA1.
+Au total, 3953 protéines distinctes non redondantes ont été identifiées et 163 d’entre elles ont été exprimées différemment, dont 91 protéines régulées positivement et 72 protéines régulées négativement.
+Les DEP étaient principalement localisés dans le cytoplasme et étaient impliqués dans la liaison aux protéines et à l’ARN poly(A).
+Les analyses KEEG ont suggéré que les voies clés des DEP appartenaient à la mélanogenèse, aux épistéosomes, aux jonctions serrées et aux voies de signalisation FoxO et MAPK.
+Les données de cette étude fournissent non seulement un ensemble complet de données sur les modifications protéiques globales causées par l’expression de EtAMA1, mais éclairent également les mécanismes moléculaires potentiels de EtAMA1 au cours des infections à Eimeria.

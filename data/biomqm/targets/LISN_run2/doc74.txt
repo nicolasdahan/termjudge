@@ -1,0 +1,8 @@
+Nous avons comparé le nombre de cas présumés de tuberculose testés et le nombre (proportion) de cas microbiologiquement positifs avant (janvier-août 2018) et après (janvier-août 2019) le déploiement de TrueNat. Nous avons interrogé des techniciens de laboratoire et un superviseur de laboratoire principal de 25 TU sélectionnés au hasard pour évaluer la faisabilité opérationnelle.
+En 2018, 10,5% (plage de 8,9-13,1) des 245 989 cas présumés étaient positifs.
+En 2019, parmi les 185 435 cas présumés testés, 13,7% (entre 9,6 et 18,9) étaient positifs.
+La proportion de cas présumés de TB chez lesquels la TBM a été détectée à l'aide de TrueNat était de 14,4 % (plage de 10,0 à 21,2).
+TrueNat a augmenté significativement la détection des cas (rapport des taux d'incidence [RRI] 1,30 ; IC à 95 % 1,15 à 1,46), ce qui a donné lieu à 18 cas supplémentaires de tuberculose pour 100 000 habitants.
+Les techniciens de laboratoire sont devenus à l'aise dans la réalisation de TrueNat après une médiane de 10 tests (intervalle interquartile de 5 à 17,5).
+Les déclarations d'invalid ont diminué de 6,8 % à 3,6 %.
+Le déploiement de TrueNat en tant que test de diagnostic POC a amélioré la détection de cas et a été opérationnellement réalisable sous RNTCP.

@@ -1,0 +1,11 @@
+Un modèle visant à prédire l'infection par le SRAS-CoV-2 selon les données de surveillance des trois premiers mois au Brésil
+Le diagnostic de la COVID-19 est un problème critique, principalement en raison de l'absence ou du retard des résultats des tests.
+Nous avons cherché à obtenir un modèle pour prédire l'infection par le SRAS-CoV-2 chez les patients suspects signalés au système de surveillance brésilien.
+Nous avons analysé les patients suspects signalés au Système national de surveillance qui correspondaient à la définition de cas suivante : patients présentant des symptômes respiratoires et de la fièvre, ayant voyagé dans des régions de transmission locale ou communautaire ou ayant été en contact étroit avec un cas suspect ou confirmé.
+Sur la base de variables recueillies régulièrement, nous avons obtenu un modèle multiple en utilisant la régression logistique.
+La zone sous la courbe caractéristique de fonctionnement du récepteur (AUC) et les indicateurs de précision ont été utilisés pour la validation.
+Nous avons décrit 1 468 cas de COVID-19 (confirmés par RT-PCR) et 4 271 patients atteints d'autres maladies.
+Avec un sous-ensemble de données incluant 80 % de patients de Sao Paulo (SP) et de Rio Janeiro (RJ), nous avons obtenu une fonction qui a atteint une ASC de 95,54 % (IC à 95 % : 94,41 à 96,67 %) pour le diagnostic de la COVID-19 et une précision de 90,1 % (sensibilité 87,62 % et spécificité 92,02 %).
+Dans un ensemble de données de validation incluant les 20 % restants de patients de SP et RJ, ce modèle présentait une ASC de 95,01 % (92,51-97,5 %) et une précision de 89,47 % (sensibilité 87,32 % et spécificité 91,36 %).
+Nous avons obtenu un modèle adapté au diagnostic clinique de la COVID-19 basé sur des données de surveillance recueillies automatiquement.
+Les utilisations de cet outil comprennent l'identification précoce à des fins de traitement et d'isolement spécifiques, l'utilisation rationnelle des tests de laboratoire et la modélisation des tendances épidémiologiques.

@@ -1,0 +1,8 @@
+Les prothèses visuelles visent à restaurer une vision utile chez les patients devenus aveugles.
+Cette vision utile devrait leur permettre de retrouver leur autonomie dans la société pour la navigation, la reconnaissance du visage ou la lecture.
+Deux prothèses rétiniennes ont déjà obtenu une autorisation de mise sur le marché pour les patients atteints de dystrophies rétiniennes, alors qu’un nouveau dispositif est en cours d’essais cliniques pour les patients atteints de dégénérescence maculaire liée à l’âge.
+Diverses prothèses, en particulier corticales, sont actuellement en cours d’essais cliniques pour les neuropathies optiques (glaucome).
+La thérapie optogénétique, une stratégie alternative, a maintenant atteint le stade des essais cliniques au niveau rétinien tout en progressant au niveau cortical.
+D’autres stratégies innovantes ont permis d’obtenir des preuves de concepts chez les rongeurs mais nécessitent une validation ultérieure chez les grands animaux avant leur évaluation sur les patients.
+La restauration de la vision devrait donc devenir une réalité pour de nombreux patients, même si cette vision ne sera pas aussi étendue et parfaite que la vision naturelle.
+Modèle de prédiction de l'infection par le CoV-SRAS sur la base des premières données de surveillance à trois mois au Brésil

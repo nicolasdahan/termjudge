@@ -1,0 +1,12 @@
+Conservation de l'hôte par l'intermédiaire de ses parasites: surveillance moléculaire des micro-organismes à vecteur chez les chauves-souris à l'aide de mouches ectoparasites
+La plupart des vertébrés abritent une grande variété de parasites hématophages, qui peuvent jouer un rôle important dans la transmission de micro-organismes à vecteurs à des hôtes.
+La surveillance s'effectue généralement par prélèvement d'échantillons de sang et/ou de tissus sur des hôtes vertébrés.
+Il existe de multiples procédés pour obtenir des échantillons, qui peuvent être stockés pendant des décennies s'ils sont conservés correctement.
+Cependant, le prélèvement sanguin est considéré comme une méthode invasive et peut être nocif pour l'individu prélevé.
+Dans cette étude, nous avons étudié l'utilisation d'ectoparasites comme outil d'acquisition d'informations moléculaires sur la présence et la diversité de micro-organismes infectieux dans des populations hôtes.
+Nous avons testé la présence de trois micro-organismes vecteurs distincts dans le sang des chauves-souris et chez les mouches des chauves-souris: les bactéries bartonella, polychromophilus sp. (apicomplexa) de type paludéen et trypanosoma sp. (kinetoplastea).
+Nous avons détecté la présence de ces micro-organismes à la fois chez les chauves-souris et chez leurs mouches à chauves-souris, à l'exception de trypanosoma sp. chez les mouches à chauves-souris sud-africaines.
+De plus, nous avons trouvé bartonella sp. chez des mouches à chauves-souris d'une population en espagne, suggérant sa présence dans la population hôte même si elle n'a pas été détectée chez les chauves-souris.
+L'infection à bartonella et à polychromophilus a montré la prévalence la plus élevée dans les populations de chauves-souris et de mouches des chauves-souris.
+Des infections uniques, co-et triples étaient également fréquemment présentes dans les deux cas.
+Nous soulignons l'utilisation d'ectoparasites hématophages pour étudier la présence de micro-organismes infectieux dans le sang de l'hôte et son utilisation comme méthode alternative d'échantillonnage moins invasive.

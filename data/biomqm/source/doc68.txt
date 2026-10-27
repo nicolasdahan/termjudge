@@ -1,0 +1,8 @@
+Vision restoration: science fiction or reality?
+Visual prostheses aim at restoring useful vision to patients who have become blind.
+This useful vision should enable them to regain autonomy in society for navigation, face recognition or reading.
+Two retinal prostheses have already obtained market authorization for patients affected by retinal dystrophies while a new device is in clinical trials for patients affected by age-related macular degeneration.
+Various prostheses, in particular cortical prostheses, are currently in clinical trials for optic neuropathies (glaucoma).
+Optogenetic therapy, an alternative strategy, has now reached the stage of clinical trials at the retinal level while moving forward at the cortical level.
+Other innovating strategies have obtained proofs of concepts in rodents but require a further validation in large animals prior to their evaluation on patients.
+Restoring vision should therefore become a reality for many patients even if this vision will not be as extensive and perfect as natural vision.
