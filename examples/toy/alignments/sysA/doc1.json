@@ -1,0 +1,16 @@
+{
+ "doc_id": "doc1",
+ "system": "sysA",
+ "occurrences": [
+  {"term_id": 0, "head_term": "machine translation", "source_term": "machine translation", "variation_category": "no_variation", "source_segment_ids": [0], "target_term": "traduction automatique"},
+  {"term_id": 1, "head_term": "neural network", "source_term": "neural network", "variation_category": "no_variation", "source_segment_ids": [0], "target_term": "réseau de neurones", "target_lemma": "réseau de neurone"},
+  {"term_id": 4, "head_term": "decoder", "source_term": "decoder", "variation_category": "no_variation", "source_segment_ids": [1], "target_term": "décodeur"},
+  {"term_id": 2, "head_term": "attention mechanism", "source_term": "attention mechanism", "variation_category": "no_variation", "source_segment_ids": [2], "target_term": "mécanisme d'attention"},
+  {"term_id": 4, "head_term": "decoder", "source_term": "decoder", "variation_category": "no_variation", "source_segment_ids": [2], "target_term": "décodeur"},
+  {"term_id": 2, "head_term": "attention mechanism", "source_term": "attention", "variation_category": "VR", "source_segment_ids": [3], "target_term": "attention"},
+  {"term_id": 3, "head_term": "beam search", "source_term": "Beam search", "variation_category": "no_variation", "source_segment_ids": [4], "target_term": "recherche en faisceau"},
+  {"term_id": 0, "head_term": "machine translation", "source_term": "Machine translation", "variation_category": "no_variation", "source_segment_ids": [5], "target_term": "traduction automatique"},
+  {"term_id": 0, "head_term": "machine translation", "source_term": "MT", "variation_category": "VG", "source_segment_ids": [6], "target_term": "TA"},
+  {"term_id": 1, "head_term": "neural network", "source_term": "neural networks", "source_lemma": "neural network", "variation_category": "no_variation", "source_segment_ids": [7], "target_term": "réseaux de neurones", "target_lemma": "réseau de neurone"}
+ ]
+}

@@ -1,0 +1,8 @@
+La traduction automatique neuronale repose sur un réseau de neurones pour traduire les phrases.
+Le décodeur génère la phrase cible un token à la fois.
+Un mécanisme d'attention permet au décodeur de se concentrer sur les mots source pertinents.
+Avec l'attention, les phrases longues sont traduites plus fidèlement.
+La recherche en faisceau conserve les hypothèses les plus prometteuses pendant le décodage.
+Les systèmes de traduction automatique entraînés ainsi surpassent les approches antérieures.
+La qualité de la TA est généralement mesurée par rapport à des traductions de référence.
+Dans cet article, nous évaluons des réseaux de neurones de différentes tailles.

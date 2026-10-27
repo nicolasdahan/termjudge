@@ -1,0 +1,10 @@
+{
+  "spacy_model": "hand-made for the toy example",
+  "lemmas": {
+    "traduction automatique": "traduction automatique",
+    "réseau de neurones": "réseau de neurone",
+    "mécanisme d'attention": "mécanisme d'attention",
+    "recherche en faisceau": "recherche en faisceau",
+    "décodeur": "décodeur"
+  }
+}

@@ -1,0 +1,6 @@
+tid;skos:prefLabel@en;skos:prefLabel@fr;skos:altLabel@en;skos:altLabel@fr
+0;machine translation;traduction automatique;MT;TA
+1;neural network;réseau de neurones;neural net;réseau neuronal
+2;attention mechanism;mécanisme d'attention;attention;
+3;beam search;recherche en faisceau;;
+4;decoder;décodeur;;

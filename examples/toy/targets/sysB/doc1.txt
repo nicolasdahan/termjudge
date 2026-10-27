@@ -1,0 +1,8 @@
+La traduction machine neuronale s'appuie sur un réseau neuronal pour traduire les phrases.
+Le décodeur produit la phrase cible un jeton à la fois.
+Un mécanisme d'attention permet au décodeur de se focaliser sur les mots sources pertinents.
+Avec l'attention, les longues phrases sont traduites plus précisément.
+Beam search conserve les hypothèses les plus prometteuses pendant le décodage.
+Les systèmes de traduction automatique entraînés de cette façon dépassent les approches précédentes.
+La qualité de la traduction automatique est généralement mesurée par rapport à des traductions de référence.
+Dans cet article, nous évaluons des réseaux de neurones de différentes tailles.

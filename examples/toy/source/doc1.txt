@@ -1,0 +1,8 @@
+Neural machine translation relies on a neural network to translate sentences.
+The decoder generates the target sentence one token at a time.
+An attention mechanism lets the decoder focus on relevant source words.
+With attention, long sentences are translated more accurately.
+Beam search keeps the most promising hypotheses during decoding.
+Machine translation systems trained this way outperform earlier approaches.
+MT quality is usually measured against reference translations.
+In this paper, we evaluate neural networks of different sizes.
