@@ -15,7 +15,7 @@ the layout expected by ``termjudge-annotate --target-docs-dir``.
 Usage::
 
     python scripts/from_concordancer.py \\
-        --input-dir  <concordancer step4 output>/free_llm_output \\
+        --input-dir  <Concordancer alignment output> \\
         --output-dir data/mycorpus/alignments \\
         --targets-dir data/mycorpus/targets
 """

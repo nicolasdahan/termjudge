@@ -130,7 +130,7 @@ Users of the Concordancer pipeline can convert its alignment files with:
 
 ```
 python scripts/from_concordancer.py \
-    --input-dir <step4 output>/free_llm_output \
+    --input-dir <Concordancer alignment output> \
     --output-dir data/mycorpus/alignments \
     --targets-dir data/mycorpus/targets
 ```
