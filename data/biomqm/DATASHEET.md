@@ -63,10 +63,17 @@ The texts and translations derived from bio-MQM remain under the Apache License 
 If you use BioMQM-Terms, please cite the TermJudge paper and the bio-MQM paper:
 
 ```
-@article{zouhar2024finetuned,
-  title   = {Fine-Tuned Machine Translation Metrics Struggle in Unseen Domains},
-  author  = {Zouhar, Vil{\'e}m and Ding, Shuoyang and Currey, Anna and Badeka, Tatyana and Wang, Jenyuan and Thompson, Brian},
-  journal = {arXiv preprint arXiv:2402.18747},
-  year    = {2024}
+@inproceedings{zouhar-etal-2024-fine,
+  title     = {Fine-Tuned Machine Translation Metrics Struggle in Unseen Domains},
+  author    = {Zouhar, Vil{\'e}m and Ding, Shuoyang and Currey, Anna and Badeka, Tatyana and Wang, Jenyuan and Thompson, Brian},
+  editor    = {Ku, Lun-Wei and Martins, Andre and Srikumar, Vivek},
+  booktitle = {Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 2: Short Papers)},
+  month     = aug,
+  year      = {2024},
+  address   = {Bangkok, Thailand},
+  publisher = {Association for Computational Linguistics},
+  pages     = {488--500},
+  doi       = {10.18653/v1/2024.acl-short.45},
+  url       = {https://aclanthology.org/2024.acl-short.45/}
 }
 ```
