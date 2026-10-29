@@ -160,9 +160,9 @@ def parse_args(argv: Optional[List[str]] = None) -> argparse.Namespace:
     p.add_argument("--model", default="gpt-4.1-mini",
                    help="Judge model name (an OpenAI model, or the model served by --base-url).")
     p.add_argument("--base-url", dest="base_url", default=None,
-                   help="Base URL of a server implementing the chat completions API, to judge "
-                        "with an open model (e.g. vLLM: http://localhost:8000/v1). Default: "
-                        "the OpenAI API, read OPENAI_API_KEY.")
+                   help="Base URL of an OpenAI-compatible chat completions endpoint "
+                        "(e.g. a vLLM server: http://localhost:8000/v1). Default: the OpenAI "
+                        "API, read OPENAI_API_KEY.")
     p.add_argument("--vllm-url", dest="base_url", default=None, help=argparse.SUPPRESS)
     p.add_argument("--api-key", default=None,
                    help="API key. Default: OPENAI_API_KEY (OpenAI API) or VLLM_API_KEY, "

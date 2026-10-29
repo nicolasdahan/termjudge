@@ -2,7 +2,7 @@
 
 TermJudge is a document-level terminology metric for machine translation: for every occurrence of a term in a translated document, it decides, with an LLM judge, whether the translation is correct and whether it is consistent with the rest of the document, and it aggregates these verdicts into a score.
 
-The metric is described in *TermJudge: A Document-Level Metric Judging, Not Counting, Terminology in Machine Translation Evaluation* (Nicolas Dahan, François Yvon, Rachel Bawden, WMT 2026, https://aclanthology.org/2026.wmt-main.6/). The judge can be an OpenAI model or any open-weight model served locally (see "Choosing the judge"). This repository contains the code of the metric and BioMQM-Terms, the terminology evaluation resource built for the paper from the bio-MQM corpus (`data/biomqm/`).
+The metric is described in *TermJudge: A Document-Level Metric Judging, Not Counting, Terminology in Machine Translation Evaluation* (Nicolas Dahan, François Yvon, Rachel Bawden, WMT 2026). This repository contains the code of the metric and BioMQM-Terms, the terminology evaluation resource built for the paper from the bio-MQM corpus (`data/biomqm/`).
 
 ```
 @inproceedings{dahan-etal-2026-termjudge,
@@ -50,7 +50,7 @@ The toy example in `examples/toy/` is a one-document corpus translated by two sy
 examples/toy/run_toy.sh
 ```
 
-This annotates the two systems in dry-run mode (no LLM call: divergences default to `VAR_NJ`, hapax are skipped) and scores them. A real run needs a judge: an OpenAI model, as below, or an open model served locally (see "Choosing the judge"). The outputs land under `examples/toy/output/<SYSTEM>/runs/dry-run/`: `annotations/doc1.json` (one verdict per occurrence), `chains/doc1.md` (a readable view, one table per concept), `scores_per_document.csv` and `scores_aggregated.csv`.
+This annotates the two systems in dry-run mode (no LLM call: divergences default to `VAR_NJ`, hapax are skipped) and scores them. The outputs land under `examples/toy/output/<SYSTEM>/runs/dry-run/`: `annotations/doc1.json` (one verdict per occurrence), `chains/doc1.md` (a readable view, one table per concept), `scores_per_document.csv` and `scores_aggregated.csv`.
 
 With a judge, the same example takes about twenty LLM calls:
 
@@ -142,10 +142,10 @@ The paper's verdicts were obtained with occurrence files produced by the Concord
 
 ## Choosing the judge
 
-TermJudge sends its prompts in the "chat completions" request format. That format was defined by OpenAI, but it is also what open-source inference servers (vLLM, Ollama, llama.cpp, TGI) and most hosted providers implement, so the judge can be an OpenAI model or any open-weight model you serve yourself; in the second case nothing is sent to OpenAI.
+TermJudge talks to the judge through the chat completions protocol of the `openai` Python client, so any model served through that protocol can be the judge.
 
 - OpenAI API (the paper's setting): set `OPENAI_API_KEY` and pass `--model gpt-4.1-mini`. The client negotiates the request parameters of the model family on its first call (recent OpenAI models reject `max_tokens` or a fixed temperature).
-- Open model behind a local server: pass `--base-url`. For example, start a vLLM server on a GPU machine and point TermJudge at it:
+- Any OpenAI-compatible endpoint: pass `--base-url`. For example, start a vLLM server on a GPU machine and point TermJudge at it:
 
   ```
   vllm serve Qwen/Qwen3-0.6B --port 8765 --default-chat-template-kwargs '{"enable_thinking": false}'
