@@ -9,7 +9,7 @@ expected to be normalised by that upstream step. Matching here is light:
                  + leading French articles (``le``, ``la``, ``les``, ``l'`` ...)
 - ``graphic``  : equal after additionally collapsing dashes/apostrophes and
                  stripping diacritics - used by the Q2 equivalence rule
-- ``none``     : no match → divergence, route to Q1
+- ``none``     : no match -> divergence, route to Q1
 """
 
 from __future__ import annotations

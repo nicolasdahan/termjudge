@@ -138,9 +138,9 @@ def _repair_escape(m: "re.Match[str]") -> str:
 def extract_json(text: str) -> Optional[dict]:
     """Best-effort JSON extraction from a model response.
 
-    Tries: direct ``json.loads`` → markdown ```json``` block → first balanced
+    Tries: direct ``json.loads`` -> markdown ```json``` block -> first balanced
     ``{...}`` substring. If all fail, tries them once more after repairing
-    invalid backslash escapes (``\\'`` → ``'``, other ``\\x`` → literal
+    invalid backslash escapes (``\\'`` -> ``'``, other ``\\x`` -> literal
     backslash). Last resort: decode the first complete JSON object (from the
     first ``{``) and ignore whatever follows it, e.g. a stray closing brace
     after a valid object. Both fallbacks only run on otherwise unparseable
@@ -321,8 +321,8 @@ class LLMClient:
         # Token-usage accounting for ACTUAL API calls (cache hits excluded).
         # Per prompt_name: number of calls, input/output tokens, the largest
         # completion seen (to tune --max-tokens), and how many hit the
-        # max_tokens cap (finish_reason == "length" → truncated → JSON likely
-        # unparseable → silent default). Guarded by ``_usage_lock``.
+        # max_tokens cap (finish_reason == "length" -> truncated -> JSON likely
+        # unparseable -> silent default). Guarded by ``_usage_lock``.
         self._usage_lock = Lock()
         self.usage: Dict[str, Dict[str, int]] = {}
         # Request style, negotiated on the first API call (see _STYLES).
@@ -356,7 +356,7 @@ class LLMClient:
                 "max_prompt_tokens": 0, "max_completion_tokens": 0, "truncated": 0,
             })
             u["length_retries"] = u.get("length_retries", 0) + n_len
-            if still_truncated:  # still capped after retries → real silent default
+            if still_truncated:  # still capped after retries -> real silent default
                 u["hard_truncated"] = u.get("hard_truncated", 0) + 1
 
     def usage_summary(self) -> Dict[str, object]:
