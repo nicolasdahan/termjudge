@@ -40,7 +40,7 @@ examples/toy/run_toy.sh
 
 This annotates the two systems in dry-run mode (no LLM call: divergences default to `VAR_NJ`, hapax are skipped) and scores them. The outputs land under `examples/toy/output/<SYSTEM>/runs/dry-run/`: `annotations/doc1.json` (one verdict per occurrence), `chains/doc1.md` (a readable view, one table per concept), `scores_per_document.csv` and `scores_aggregated.csv`.
 
-With a judge, the same example takes a few dozen LLM calls:
+With a judge, the same example takes about twenty LLM calls:
 
 ```
 export OPENAI_API_KEY=...
@@ -86,7 +86,7 @@ Producing the occurrences (term detection, variation labelling and source-to-tar
 | `F` | grammar or phraseology around the term | 1 |
 | `G` | content altered (addition, omission, hallucination) | 1 |
 | `H` | defective target-language expression or register | 1 |
-| `SKIPPED_HAPAX` | hapax not judged (`--hapax-mode skip` or dry run) | not scored |
+| `SKIPPED_HAPAX` | hapax not judged (`--hapax-mode skip` or dry run) | 0 (left out by `--exclude-hapax`) |
 
 `A1` to `A7` follow level A of the error typology of Carcamo et al.; `C` to `H` group its other families, each scored at its most lenient sub-code. The code lists are kept in `termjudge/metric/typology.py` (error codes) and `termjudge/metric/q2.py` (consistency labels: `introduction`, `explicitation`, `avoid_repetition`, `document_usage`, `register`, `facet`, `synonym_merge` give `VAR_J`; `neutralisation`, `synonym_inconsistency`, `gratuitous_divergence` give `VAR_NJ`).
 
@@ -133,19 +133,14 @@ The paper's verdicts were obtained with occurrence files produced by the Concord
 TermJudge talks to the judge through the chat completions protocol of the `openai` Python client, so any model served through that protocol can be the judge.
 
 - OpenAI API (the paper's setting): set `OPENAI_API_KEY` and pass `--model gpt-4.1-mini`. The client negotiates the request parameters of the model family on its first call (recent OpenAI models reject `max_tokens` or a fixed temperature).
-- Any OpenAI-compatible endpoint: pass `--base-url`. For example, with a vLLM server started on a GPU machine as
+- Any OpenAI-compatible endpoint: pass `--base-url`. For example, start a vLLM server on a GPU machine and point TermJudge at it:
 
   ```
   vllm serve Qwen/Qwen3-0.6B --port 8765 --default-chat-template-kwargs '{"enable_thinking": false}'
-  ```
-
-  (the last option matters for models with a thinking mode, whose reasoning would otherwise consume the output token budget), the judge is selected with
-
-  ```
   termjudge-annotate ... --base-url http://<host>:8765/v1 --model Qwen/Qwen3-0.6B
   ```
 
-  With `--base-url`, requests always use the classic style (`temperature` and `max_tokens`), and the API key is `--api-key`, else `VLLM_API_KEY`, else the dummy key `EMPTY` that a local server accepts. The toy example runs this way with `BASE_URL=http://<host>:8765/v1 MODEL=Qwen/Qwen3-0.6B examples/toy/run_toy.sh full`, and `data/biomqm/run_termjudge.sh` reads the same two variables (see below). Larger judges are served the same way, for example `Qwen/Qwen3.5-27B` or `google/gemma-4-12B-it`.
+  The `enable_thinking` option matters for models with a thinking mode, whose reasoning would otherwise consume the output token budget. With `--base-url`, requests always use the classic style (`temperature` and `max_tokens`), and the API key is `--api-key`, else `VLLM_API_KEY`, else the dummy key `EMPTY` that a local server accepts. The toy example runs this way with `BASE_URL=http://<host>:8765/v1 MODEL=Qwen/Qwen3-0.6B examples/toy/run_toy.sh full`, and `data/biomqm/run_termjudge.sh` reads the same two variables (see below). Larger judges are served the same way, for example `Qwen/Qwen3.5-27B` or `google/gemma-4-12B-it`.
 
 The paper's numbers were obtained with `gpt-4.1-mini`; another judge gives other verdicts.
 
@@ -167,7 +162,9 @@ It writes the annotations under `output/biomqm/<SYSTEM>/runs/paper/` and the sco
 
 ```
 BASE_URL=http://<host>:8765/v1 MODEL=Qwen/Qwen3-0.6B data/biomqm/run_termjudge.sh --systems LISN_run1 --max-docs 1
-``` The paper's tables come from a meta-evaluation against the human MQM scores that is not part of this repository, so this command reproduces the paper's verdicts and document scores, not its tables.
+```
+
+The paper's tables come from a meta-evaluation against the human MQM scores that is not part of this repository, so this command reproduces the paper's verdicts and document scores, not its tables.
 
 ## License and attribution
 
