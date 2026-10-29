@@ -133,13 +133,19 @@ The paper's verdicts were obtained with occurrence files produced by the Concord
 TermJudge talks to the judge through the chat completions protocol of the `openai` Python client, so any model served through that protocol can be the judge.
 
 - OpenAI API (the paper's setting): set `OPENAI_API_KEY` and pass `--model gpt-4.1-mini`. The client negotiates the request parameters of the model family on its first call (recent OpenAI models reject `max_tokens` or a fixed temperature).
-- Any OpenAI-compatible endpoint: pass `--base-url`. With a vLLM server started as `vllm serve Qwen/Qwen3.5-27B --port 8765`:
+- Any OpenAI-compatible endpoint: pass `--base-url`. For example, with a vLLM server started on a GPU machine as
 
   ```
-  termjudge-annotate ... --base-url http://localhost:8765/v1 --model Qwen/Qwen3.5-27B
+  vllm serve Qwen/Qwen3-0.6B --port 8765 --default-chat-template-kwargs '{"enable_thinking": false}'
   ```
 
-  With `--base-url`, requests always use the classic style (`temperature` and `max_tokens`), and the API key is `--api-key`, else `VLLM_API_KEY`, else the dummy key `EMPTY` that a local server accepts. The toy example runs this way with `BASE_URL=http://localhost:8765/v1 MODEL=Qwen/Qwen3.5-27B examples/toy/run_toy.sh full`.
+  (the last option matters for models with a thinking mode, whose reasoning would otherwise consume the output token budget), the judge is selected with
+
+  ```
+  termjudge-annotate ... --base-url http://<host>:8765/v1 --model Qwen/Qwen3-0.6B
+  ```
+
+  With `--base-url`, requests always use the classic style (`temperature` and `max_tokens`), and the API key is `--api-key`, else `VLLM_API_KEY`, else the dummy key `EMPTY` that a local server accepts. The toy example runs this way with `BASE_URL=http://<host>:8765/v1 MODEL=Qwen/Qwen3-0.6B examples/toy/run_toy.sh full`, and `data/biomqm/run_termjudge.sh` reads the same two variables (see below). Larger judges are served the same way, for example `Qwen/Qwen3.5-27B` or `google/gemma-4-12B-it`.
 
 The paper's numbers were obtained with `gpt-4.1-mini`; another judge gives other verdicts.
 
@@ -157,7 +163,11 @@ The exact command of the paper on this dataset is `data/biomqm/run_termjudge.sh`
 data/biomqm/run_termjudge.sh
 ```
 
-It writes the annotations under `output/biomqm/<SYSTEM>/runs/paper/` and the scores next to them. The paper's tables come from a meta-evaluation against the human MQM scores that is not part of this repository, so this command reproduces the paper's verdicts and document scores, not its tables.
+It writes the annotations under `output/biomqm/<SYSTEM>/runs/paper/` and the scores next to them. Extra arguments are passed on to `termjudge-annotate`; a quick trial on one system and one document with an open judge is
+
+```
+BASE_URL=http://<host>:8765/v1 MODEL=Qwen/Qwen3-0.6B data/biomqm/run_termjudge.sh --systems LISN_run1 --max-docs 1
+``` The paper's tables come from a meta-evaluation against the human MQM scores that is not part of this repository, so this command reproduces the paper's verdicts and document scores, not its tables.
 
 ## License and attribution
 
